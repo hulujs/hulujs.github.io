@@ -12,7 +12,7 @@ import Loading from '@@/dumi/theme/loading';
 import { ApplyPluginsType } from 'umi';
 
 
-const publicPath = "/";
+const publicPath = "/doc/";
 const runtimePublicPath = false;
 
 async function render() {
