@@ -59,6 +59,11 @@ bower_components
 npm-shrinkwrap.json
 package-lock.json
 
+## umi
+.dumi
+.umi
+.umi-production
+
 # 构建
 dist
 test
