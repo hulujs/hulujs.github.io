@@ -46,6 +46,8 @@ console.log(window === globalThis); // true
 
 上下文生命周期分为三个阶段：`创建` -> `执行` -> `回收`
 
+![Alt text](./assets/context__lifecycle.png)
+
 ### 创建阶段
 
 执行上下文的创建阶段是JavaScript引擎在执行JavaScript程序之前，对程序进行扫描和处理的阶段。
