@@ -36,7 +36,7 @@ withMet 是一个高阶组件，它可以让你在不改动源码的情况下，
 
 ```ts
 import React from'react'; 
-import { withMet } from '@hulu/met'; 
+import { withMet } from '@hulujs/met'; 
 import { Select } from 'antd'; 
 
 // with met 

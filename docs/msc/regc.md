@@ -13,7 +13,7 @@ order: 2
 由 `Regc` 类提供注册服务的能力，可通过 `Regc.register` 方法注册服务。
 
 ```ts
-import { Regc } from '@hulu/msc';
+import { Regc } from '@hulujs/msc';
 
 Regc.register('HULU_RUYI_RESPONSE_INTERCEPTORS', () => {
     return (res) => {
@@ -38,7 +38,7 @@ Regc.register(regKey: string, fn: (prevValue: any) => any);
 ## 获取注册信息
 
 ```ts
-import { Regc } from '@hulu/msc';
+import { Regc } from '@hulujs/msc';
 Regc.get('HULU_RUYI_RESPONSE_INTERCEPTORS');
 ```
 

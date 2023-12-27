@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdemo=self.webpackChunkdemo||[]).push([[2433],{87519:function(t,n,u){u.r(n);var s=u(67294),e=u(85893);n.default=function(){return(0,e.jsx)(e.Fragment,{children:"Demo \u5206\u680F\u6F14\u793A"})}}}]);

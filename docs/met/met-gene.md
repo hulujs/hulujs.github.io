@@ -18,7 +18,7 @@ group:
 ## 基础用法
 
 ```tsx
-import { MetGene } from '@hulu/met';
+import { MetGene } from '@hulujs/met';
 import { Table } from 'antd';
 
 const dataSource = [
@@ -53,7 +53,7 @@ type childFunc = (dominant: Record<string, any>, recessive: Record<string, any>,
 ```
 
 ```tsx
-import { MetGene } from '@hulu/met';
+import { MetGene } from '@hulujs/met';
 import { Table } from 'antd';
 
 const dataSource = [
@@ -86,7 +86,7 @@ Met 权重规则是越接近权重越高
 
 ```tsx
 import React from 'react';
-import { MetBox, MetCenter, MetGene } from '@hulu/met';
+import { MetBox, MetCenter, MetGene } from '@hulujs/met';
 import { Table, Switch } from 'antd';
 
 const dataSource = [
@@ -127,7 +127,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { MetBox, Met, MetGene, MetCenter } from '@hulu/met';
+import { MetBox, Met, MetGene, MetCenter } from '@hulujs/met';
 import { Switch } from 'antd';
 
 export default () => {

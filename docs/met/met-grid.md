@@ -24,7 +24,7 @@ Grid固定高度, 单元格(cell)不设置宽高, 自由设置 cols, rows；
  * compact: true 
  */
 import React from'react';
-import { Met, MetGrid, MetBox, MetCenter } from '@hulu/met';
+import { Met, MetGrid, MetBox, MetCenter } from '@hulujs/met';
 import { InputNumber} from 'antd';
 
 export default () => {
@@ -57,7 +57,7 @@ export default () => {
  * compact: true 
  */
 import React from'react';
-import { Met, MetGrid, MetBox, MetCenter } from '@hulu/met';
+import { Met, MetGrid, MetBox, MetCenter } from '@hulujs/met';
 import { InputNumber, Switch } from 'antd';
 import { random } from 'lodash-es';
 
@@ -92,7 +92,7 @@ export default () => {
  * compact: true 
  */
 import React from'react';
-import { Met, MetGrid, MetBox, MetCenter } from '@hulu/met';
+import { Met, MetGrid, MetBox, MetCenter } from '@hulujs/met';
 import { random, rows, map } from 'lodash-es';
 import { InputNumber} from 'antd';
 
@@ -128,7 +128,7 @@ export default () => {
  * compact: true 
  */
 import React from'react';
-import { Met, MetGrid, MetBox, MetCenter } from '@hulu/met';
+import { Met, MetGrid, MetBox, MetCenter } from '@hulujs/met';
 import { InputNumber, Switch, Segmented } from 'antd';
 import { random } from 'lodash-es';
 
@@ -167,7 +167,7 @@ export default () => {
  * compact: true 
  */
 import React from'react';
-import { Met, MetGrid, MetBox, MetFlex, MetCenter } from '@hulu/met';
+import { Met, MetGrid, MetBox, MetFlex, MetCenter } from '@hulujs/met';
 import { InputNumber, Switch, Segmented } from 'antd';
 import { random } from 'lodash-es';
 
@@ -205,7 +205,7 @@ export default () => {
  * compact: true 
  */
 import React from'react';
-import { Met, MetGrid, MetBox, MetFlex, MetCenter } from '@hulu/met';
+import { Met, MetGrid, MetBox, MetFlex, MetCenter } from '@hulujs/met';
 import { InputNumber, Switch, Segmented } from 'antd';
 import { random } from 'lodash-es';
 
@@ -246,7 +246,7 @@ export default () => {
  * compact: true 
  */
 import React from'react';
-import { Met, MetGrid, MetBox, MetCenter } from '@hulu/met';
+import { Met, MetGrid, MetBox, MetCenter } from '@hulujs/met';
 import { random, rows, map } from 'lodash-es';
 import { InputNumber, Button, Segmented } from 'antd';
 

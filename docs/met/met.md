@@ -19,7 +19,7 @@ group:
 /**
  * title: 使用Met画一个方格
  */ 
-import { Met } from '@hulu/met';
+import { Met } from '@hulujs/met';
 
 export default () => {
     return <Met w={100} h={100} bg="red"></Met>
@@ -33,7 +33,7 @@ export default () => {
 所以，其权重关系是: `别名` < `名称` < style[`名称`]
 
 ```tsx
-import { Met } from '@hulu/met';
+import { Met } from '@hulujs/met';
 
 export default () => {
     return <>
@@ -49,7 +49,7 @@ export default () => {
 `tag`属性是用来指定组件的html标签，默认是`div`。
 
 ```tsx
-import { Met } from '@hulu/met';
+import { Met } from '@hulujs/met';
 import { Button, Input } from 'antd';
 import LogoImg from './assets/hulu.png';
 
@@ -71,7 +71,7 @@ inline 为true 的时候，会将display转为 inline-* 属性
 `block -> inline`, `flex -> inline-flex`, `grid -> inline-grid`, `table -> inline-table`
 
 ```tsx
-import { Met } from '@hulu/met';
+import { Met } from '@hulujs/met';
 import { Select, Switch, Space } from 'antd';
 
 export default () => {
@@ -112,7 +112,7 @@ export default () => {
 为Met标签添加html备注，debug起来更为方便，只在开发环境生效
 
 ```tsx
-import { Met } from '@hulu/met';
+import { Met } from '@hulujs/met';
 import { Button, Input } from 'antd';
 import CommentImg from './assets/comment.jpg';
 

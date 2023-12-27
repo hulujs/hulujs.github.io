@@ -15,7 +15,7 @@ MetLeft 由MetFlex演化而来 是其常用场景之一，水平垂直居中
  * compact: true 
  */
 import React from'react';
-import { Met, MetLeft } from '@hulu/met';
+import { Met, MetLeft } from '@hulujs/met';
 
 export default () => {
     return <>
@@ -33,7 +33,7 @@ export default () => {
  * compact: true 
  */
 import React from'react';
-import { Met, MetLeft } from '@hulu/met';
+import { Met, MetLeft } from '@hulujs/met';
 import { Button, Select } from 'antd';
 
 export default () => {

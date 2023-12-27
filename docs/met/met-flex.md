@@ -18,7 +18,7 @@ group:
 
 ```tsx 
 import React from 'react'; 
-import { Met, MetFlex } from '@hulu/met'; 
+import { Met, MetFlex } from '@hulujs/met'; 
 
 export default () => {
 
@@ -65,7 +65,7 @@ flexItem 自行设置scroll, 不设置会撑开
 
 ```tsx 
 import React from'react';
-import { Met, MetFlex } from '@hulu/met';
+import { Met, MetFlex } from '@hulujs/met';
 
 export default () => {
     return <>
@@ -100,7 +100,7 @@ export default () => {
 
 ```tsx
 import React from'react';
-import { Met, MetFlex } from '@hulu/met';
+import { Met, MetFlex } from '@hulujs/met';
 import { Switch } from 'antd';
 
 export default () => {
@@ -127,7 +127,7 @@ MetFlex 默认属性配置为
 
 ```tsx
 import React from'react';
-import { Met, MetFlex } from '@hulu/met';
+import { Met, MetFlex } from '@hulujs/met';
 import { Switch } from 'antd';
 
 export default () => {
@@ -151,7 +151,7 @@ export default () => {
 
 ```tsx
 import React from'react';
-import { Met, MetFlex } from '@hulu/met';
+import { Met, MetFlex } from '@hulujs/met';
 import { Select } from 'antd';
 
 const options = [
@@ -203,7 +203,7 @@ export default () => {
 
 ```tsx
 import React from'react';
-import { Met, MetFlex } from '@hulu/met';
+import { Met, MetFlex } from '@hulujs/met';
 import { Segmented } from 'antd';
 
 const justifyOptions = [

@@ -25,7 +25,8 @@ const routes = [
         "path": "/",
         "view": "home",
         "meta": {
-          "count": 1
+          "count": 1,
+          "back": {}
         },
         "lazy": () => import('@/views/home')
       },

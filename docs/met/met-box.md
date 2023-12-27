@@ -41,7 +41,7 @@ const MetBox: FC<MetBoxProps> = (props) => {
  * compact: true
  */
 import React from 'react';
-import { MetBox, MetFlex, Met } from '@hulu/met';
+import { MetBox, MetFlex, Met } from '@hulujs/met';
 
 export  default () => {
     return <Met h={400}>
@@ -79,7 +79,7 @@ export  default () => {
  * compact: true
  */
 import React from 'react'; 
-import { MetBox, MetFlex, Met } from '@hulu/met'; 
+import { MetBox, MetFlex, Met } from '@hulujs/met'; 
 
 export  default () => {
 
@@ -104,7 +104,7 @@ export  default () => {
  * compact: true 
  */
 import React from'react';
-import { Met, MetBox, MetFlex } from '@hulu/met';
+import { Met, MetBox, MetFlex } from '@hulujs/met';
 import { Segmented } from 'antd';
 
 const options = [

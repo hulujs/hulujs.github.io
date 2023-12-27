@@ -7,16 +7,6 @@
     "prettier.useEditorConfig": false,
     "prettier.useTabs": false,
     "prettier.configPath": ".prettierrc.json",
-
-    "[markdown]": {
-        "editor.defaultFormatter": "mervin.markdown-formatter",
-        "editor.quickSuggestions": {
-            "other": true,
-            "comments": true,
-            "strings": true
-        }
-    },
-
     "search.exclude": {
         "**/lerna-*": true,
         "**/yarn-*": true,

@@ -14,7 +14,7 @@ MetNest 组件可以嵌套在其他组件中，以实现更复杂的应用。
 
 ```tsx
 import React from 'react';
-import { MetNest, Met, MetCenter, MetBox } from '@hulu/met';
+import { MetNest, Met, MetCenter, MetBox } from '@hulujs/met';
 
 const Layout1: React.FC<PropsWithChildren> = (props) => {
     return (
@@ -70,7 +70,7 @@ export default () => {
 
 ```tsx
 import React from 'react';
-import { MetNest, Met, MetCenter, MetBox, MetProps } from '@hulu/met';
+import { MetNest, Met, MetCenter, MetBox, MetProps } from '@hulujs/met';
 import { Checkbox } from 'antd';
 import { CheckboxChangeEvent } from 'antd/es/checkbox/Checkbox';
 

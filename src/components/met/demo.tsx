@@ -1,104 +1,54 @@
 import React from 'react';
-import { MetNest, Met, MetCenter, MetBox, MetProps } from '@hulu/met';
-import { Checkbox } from 'antd';
-import { CheckboxChangeEvent } from 'antd/es/checkbox/Checkbox';
+import { MetEcharts, MetBox, Met } from '@hulujs/met';
+import { mapping } from '@hulujs/mu';
 
-const Layout1: React.FC<MetProps> = (props) => {
-    return (
-        <Met p={16} bg={'lightblue'} {...props}>
-            <div>Layout1</div>
-            {props.children}
-        </Met>
-    );
-};
-
-const Layout2: React.FC<MetProps> = (props) => {
-    return (
-        <Met p={16} bg={'lightcyan'} {...props}>
-            <div>Layout2</div>
-            {props.children}
-        </Met>
-    );
-};
-
-const Layout3: React.FC<MetProps> = (props) => {
-    return (
-        <Met p={16} bg={'lightpink'} {...props}>
-            <div>Layout3</div>
-            {props.children}
-        </Met>
-    );
-};
-
-const Layout4: React.FC<MetProps> = (props) => {
-    return (
-        <Met p={16} bg={'lightpink'} {...props}>
-            <div>Layout4</div>
-            {props.children}
-        </Met>
-    );
-};
+const data = [
+    { year: '2018', province: '北京', value: 80 },
+    { year: '2018', province: '上海', value: 150 },
+    { year: '2018', province: '广州', value: 120 },
+    { year: '2018', province: '四川', value: 190 },
+    { year: '2018', province: '湖北', value: 100 },
+    { year: '2018', province: '福建', value: 140 },
+    { year: '2018', province: '贵州', value: 60 },
+    { year: '2019', province: '北京', value: 820 },
+    { year: '2019', province: '上海', value: 1150 },
+    { year: '2019', province: '广州', value: 1230 },
+    { year: '2019', province: '四川', value: 1920 },
+    { year: '2019', province: '湖北', value: 1200 },
+    { year: '2019', province: '福建', value: 640 },
+    { year: '2019', province: '贵州', value: 760 }
+];
 
 export default () => {
-    const [show, setShow] = React.useState({
-        Layout1: true,
-        Layout2: false,
-        Layout3: true,
-        Layout4: true
-    });
-
-    const onChange = (layout: string) => {
-        return (e: CheckboxChangeEvent) => {
-            setShow({ ...show, [layout]: e.target.checked });
-        };
-    };
-
     return (
-        <MetBox gap={8}>
-            <MetCenter placement="left">
-                <Checkbox checked={show.Layout1} onChange={onChange('Layout1')}>
-                    Layout1
-                </Checkbox>
-                <Checkbox checked={show.Layout2} onChange={onChange('Layout2')}>
-                    Layout2
-                </Checkbox>
-                <Checkbox checked={show.Layout3} onChange={onChange('Layout3')}>
-                    Layout3
-                </Checkbox>
-                <Checkbox checked={show.Layout4} onChange={onChange('Layout4')}>
-                    Layout4
-                </Checkbox>
-            </MetCenter>
-
-            <MetNest
-                bd={'green'}
-                br={8}
-                components={[
-                    show.Layout1 && Layout1,
-                    show.Layout2 && Layout2,
-                    show.Layout3 && <Layout3 bg={'lightskyblue'} />,
-                    show.Layout4 && Layout4
-                ]}
-            >
-                <MetCenter bg={'lightgreen'} p={32}>
-                    main content
-                </MetCenter>
-            </MetNest>
-
-            <MetNest
-                bd={'green'}
-                br={8}
-                components={[
-                    show.Layout2 && Layout2,
-                    show.Layout4 && Layout4,
-                    show.Layout3 && <Layout3 bg={'lightskyblue'} />,
-                    show.Layout1 && Layout1
-                ]}
-            >
-                <MetCenter bg={'lightgreen'} p={32}>
-                    main content
-                </MetCenter>
-            </MetNest>
+        <MetBox gap={16}>
+            <Met>线形图</Met>
+            <MetEcharts
+                data={data}
+                type={'line'}
+                mappers={{ x: 'province', y: 'value', d: 'year' }}
+                h={400}
+                p={16}
+                comment={'type 修改图表类型 -> line'}
+            />
+            <Met>饼图</Met>
+            <MetEcharts
+                data={data.filter(({ year }) => year === '2019')}
+                type={'pie'}
+                mappers={{ x: 'province', y: 'value', d: 'year' }}
+                h={400}
+                p={16}
+                comment={'type 修改图表类型 -> pie'}
+            />
+            <Met>仪表盘</Met>
+            <MetEcharts
+                data={data.slice(0, 1)}
+                type={'gauge'}
+                mappers={{ x: 'province', y: 'value', d: 'year' }}
+                h={400}
+                p={16}
+                comment={'type 修改图表类型 -> pie'}
+            />
         </MetBox>
     );
 };

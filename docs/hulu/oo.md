@@ -11,7 +11,7 @@ group:
 ## 全局安装
 
 ```bash
-yarn global add @hulu/cli@latest
+yarn global add @hulujs/cli@latest
 ```
 
 ## 用法

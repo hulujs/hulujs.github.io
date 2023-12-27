@@ -19,7 +19,7 @@ MetLoading 默认垂直居中
 
 ```tsx
 import React from 'react';
-import { Met, MetLoading } from '@hulu/met';
+import { Met, MetLoading } from '@hulujs/met';
 
 export default () => {
     return (
@@ -34,7 +34,7 @@ export default () => {
 ## 添加Loading文本
 
 ```tsx
-import { Met, MetLoading } from '@hulu/met';
+import { Met, MetLoading } from '@hulujs/met';
 
 export default () => {
     return (
@@ -51,7 +51,7 @@ export default () => {
 外层包裹着MetCenter, 所以可以使用MetCenter的属性配置
 
 ```tsx
-import { Met, MetLoading } from '@hulu/met';
+import { Met, MetLoading } from '@hulujs/met';
 
 export default () => {
     return (
@@ -65,7 +65,7 @@ export default () => {
 ## 更换加载动画
 
 ```tsx
-import { Met, MetLoading } from '@hulu/met';
+import { Met, MetLoading } from '@hulujs/met';
 import { Spin } from 'antd';
 import { LoadingOutlined } from '@ant-design/icons';
 

@@ -16,7 +16,7 @@ MetCenter 由MetBox演化而来 是其常用场景之一，水平垂直居中
  * title: center 居中
  */
 import React from'react';
-import { Met, MetCenter } from '@hulu/met';
+import { Met, MetCenter } from '@hulujs/met';
 
 export default () => {
     return <>
@@ -33,7 +33,7 @@ export default () => {
  * title: left center 靠左居中
  */
 import React from'react';
-import { Met, MetCenter } from '@hulu/met';
+import { Met, MetCenter } from '@hulujs/met';
 
 export default () => {
     return <>
@@ -51,7 +51,7 @@ export default () => {
  * title: vertical 垂直
  */
 import React from'react';
-import { Met, MetCenter } from '@hulu/met';
+import { Met, MetCenter } from '@hulujs/met';
 
 export default () => {
     return <>
@@ -69,7 +69,7 @@ export default () => {
  * title: between 两侧 
  */
 import React from'react';
-import { Met, MetCenter } from '@hulu/met';
+import { Met, MetCenter } from '@hulujs/met';
 
 export default () => {
     return <>
@@ -87,7 +87,7 @@ export default () => {
  * title: inline 
  */
 import React from'react';
-import { Met, MetCenter } from '@hulu/met';
+import { Met, MetCenter } from '@hulujs/met';
 
 export default () => {
     return <>

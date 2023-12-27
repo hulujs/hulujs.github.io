@@ -16,7 +16,7 @@ MetNodata 默认垂直居中
 
 ```tsx
 import React from 'react';
-import { Met, MetNodata } from '@hulu/met';
+import { Met, MetNodata } from '@hulujs/met';
 
 export default () => {
     return (
@@ -31,7 +31,7 @@ export default () => {
 ## 添加Loading文本
 
 ```tsx
-import { Met, MetNodata } from '@hulu/met';
+import { Met, MetNodata } from '@hulujs/met';
 
 export default () => {
     return (
@@ -48,7 +48,7 @@ export default () => {
 外层包裹着MetCenter, 所以可以使用MetCenter的属性配置
 
 ```tsx
-import { Met, MetNodata } from '@hulu/met';
+import { Met, MetNodata } from '@hulujs/met';
 
 export default () => {
     return (
@@ -66,7 +66,7 @@ export default () => {
 * 更换组件
 
 ```tsx
-import { MetFlex, MetNodata } from '@hulu/met';
+import { MetFlex, MetNodata } from '@hulujs/met';
 import { EyeInvisibleOutlined } from '@ant-design/icons';
 
 export default () => {

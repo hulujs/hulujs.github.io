@@ -18,7 +18,7 @@ MetDynamic 组件是 Met 组件库中最重要的组件之一，它可以动态�
 ## 基础用法
 
 ```tsx
-import { MetCenter, MetDynamic } from '@hulu/met';
+import { MetCenter, MetDynamic } from '@hulujs/met';
 import { Button } from 'antd';
 
 export default () => {
@@ -38,7 +38,7 @@ export default () => {
 ## 直接使用ReactElement
 
 ```tsx
-import { MetCenter, MetDynamic } from '@hulu/met';
+import { MetCenter, MetDynamic } from '@hulujs/met';
 import { Button, Result } from 'antd';
 
 export default () => {
